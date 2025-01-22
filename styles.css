@@ -1,4 +1,10 @@
-/* General Reset */
+:root{
+    --color-background:#1b2a41;
+    --color-text:white;
+    --color-titulo:#00d1b2;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +13,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1b2a41;
-    color: white;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+hr{
+    color: var(--color-titulo);
+    background-color: var(--color-titulo);
+    width: 900px;
+    height: 5px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-radius: 20px;
 }
 
 .hero-header {
@@ -40,7 +56,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
     font-size: 1rem;
     font-weight: bold;
 }
@@ -59,7 +75,7 @@ body {
 
 .hero-text h1 {
     font-size: 2.5rem;
-    color: #00d1b2;
+    color: var(--color-titulo);
 }
 
 .hero-text p {
@@ -69,9 +85,9 @@ body {
 
 .hero-text button {
     background-color: transparent;
-    border: 2px solid #00d1b2;
+    border: 2px solid var(--color-titulo);
     padding: 0.5rem 1rem;
-    color: #00d1b2;
+    color: var(--color-titulo);
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -80,8 +96,8 @@ body {
 }
 
 .hero-text button:hover {
-    background-color: #00d1b2;
-    color: white;
+    background-color:var(--color-titulo);
+    color: var(--color-text);
 }
 
 .hero-image img {
@@ -97,7 +113,26 @@ body {
     justify-content: center;
 }
 
-.social-icons a img {
-    width: 20px;
-    height: 20px;
+.normal {
+    width: 50px;
+    height: 50px;
+
 }
+
+.linkdn {
+    width: 65px;
+    height: 65px;
+    padding-bottom: 5px;
+    margin-top: -4px;
+}
+
+.small {
+    width: 70px;
+    height: 80px;
+    padding-bottom: 9px;
+    margin-top: -8px;
+}
+
+
+
+
