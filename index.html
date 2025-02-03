@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Header</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+    <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="./scripts.js"></script>
+    
 </head>
 <body>
     <header class="hero-header">
@@ -95,7 +97,7 @@
             </section>
         </div>
     </div>
-    
+    <!-- ...existing code... -->
     <div class="sobre-mi">
         <div class="contenido">
             <div class="card">
@@ -116,8 +118,66 @@
             <img src="./idea.png" alt="Johan Sebastián Valle" />
         </div>
     </div>
-    
-    
-    
+    <div class="proyectos">
+        <h1>Mis Proyectos</h1>
+        <div class="card-proyecto">
+            <div class="proyecto-contenido">
+                <img class="img-proyecto" src="./img/proyecto1.PNG" alt="Proyecto 1">
+                <div class="proyecto-texto">
+                    <h1>Api Rest dedicada en Java</h1>
+                    <div class="tags">
+                        <span class="tag java">
+                            <i class="fab fa-java"></i> Java
+                        </span>
+                        <span class="tag mysql">
+                            <i class="fab fa-mysql"></i> MySQL
+                        </span>
+                    </div>
+                    <p> Esta API Rest ha sido desarrollada completamente en **Java**, utilizando **Spring Boot** para facilitar la creación de servicios web y garantizar una arquitectura modular y escalable.
+                        Para la gestión de la base de datos, se ha implementado Hibernate como ORM (Object-Relational Mapping), lo que permite la manipulación eficiente de los datos almacenados en MySQL. Esta API está diseñada para manejar información de usuarios, incluyendo autenticación segura y gestión de credenciales mediante técnicas de cifrado.
+                        Además, la API ofrece un CRUD completo (Create, Read, Update, Delete) para administrar usuarios y sus permisos. Se han implementado controladores RESTful siguiendo buenas prácticas de arquitectura, junto con una capa de servicios bien definida para separar la lógica de negocio del acceso a datos.
+                    </p>
+
+                </div>
+            </div>
+            
+        </div><br><br>
+        <div class="card-proyecto">
+            <div class="proyecto-contenido">
+                <img class="img-proyecto" src="./img/proyecto2.PNG" alt="Proyecto 1">
+                <div class="proyecto-texto">
+                    <h1>Proyecto Academia</h1>
+                    <div class="tags">
+                        <span class="tag python">
+                            <i class="fab fa-python"></i> Python
+                        </span>
+                        <span class="tag odoo">
+                            <i class="fab fa-odoo"></i> Odoo
+                        </span>
+                    </div>
+                    <p> El proyecto "Academia" es un sistema de gestión de actividades y participantes desarrollado en Odoo utilizando Python como lenguaje principal. 
+                        Se compone de tres modelos principales: Activities, además de una relación Many-to-One con Participants, mostrando el progreso de inscripciones con una barra de progreso; Participants, que almacena datos de los inscritos incluyendo nombre, email, fecha de nacimiento, fecha de inscripción, actividad relacionada y un responsable vinculado a res.users, 
+                        permitiendo también asociar una imagen; y Booking, que establece una relación Many-to-Many con Activities para organizar todas las actividades en un solo módulo. 
+                        Gracias a la flexibilidad de Odoo y la potencia de Python, este sistema permite una gestión eficiente y modular de las actividades dentro de la academia.
+                    </p>
+                </div>
+            </div>
+            
+        </div><br><br>
+        <div class="card-proyecto">
+            <div class="proyecto-contenido">
+                <img class="img-proyecto" src="./img/proyecto1.PNG" alt="Proyecto 1">
+                <div class="proyecto-texto">
+                    <h1>Api Rest dedicada en Java</h1>
+                    <p> Esta API Rest ha sido desarrollada completamente en **Java**, utilizando **Spring Boot** para facilitar la creación de servicios web y garantizar una arquitectura modular y escalable.
+                        Para la gestión de la base de datos, se ha implementado Hibernate como ORM (Object-Relational Mapping), lo que permite la manipulación eficiente de los datos almacenados en MySQL. Esta API está diseñada para manejar información de usuarios, incluyendo autenticación segura y gestión de credenciales mediante técnicas de cifrado.
+                        Además, la API ofrece un CRUD completo (Create, Read, Update, Delete) para administrar usuarios y sus permisos. Se han implementado controladores RESTful siguiendo buenas prácticas de arquitectura, junto con una capa de servicios bien definida para separar la lógica de negocio del acceso a datos.
+                    </p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>

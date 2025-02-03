@@ -217,7 +217,7 @@ hr {
     align-items: flex-start;
 }
 
-.sobre-mi .card {
+ .card {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -240,4 +240,121 @@ hr {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Proyectos */
+.proyectos h1{
+    color: var(--color-titulo);
+    text-align: center;
+}
+
+.card-proyecto {
+    background-color: #333;
+    padding: 20px;
+    width:  1100px;
+    height: 370px;
+    border-radius: 10px;
+    margin-left: 100px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-proyecto {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-proyecto:hover {
+    transform: scale(1.1); /* Zoom al 110% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+
+
+.proyecto-contenido {
+    display: flex;
+    align-items: center;
+}
+
+.proyecto-contenido h1 {
+    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+
+.tags {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Estilo de los tags */
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover */
+.tag:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Colores específicos */
+.android {
+    background-color: #3DDC84;
+}
+
+.kotlin {
+    background-color: #A97BFF;
+}
+
+.java {
+    background-color: #FF9F45;
+}
+
+.html {
+    background-color: #F16529;
+}
+
+.css {
+    background-color: #2965F1;
+}
+
+.javascript {
+    background-color: #F0DB4F;
+}
+
+.mysql {
+    background-color: #00758F;
+}
+
+.php {
+    background-color: #8993BE;
+}
+
+.python {
+    background-color: #306998;
+}
+
+.odoo{
+    background-color: #6F2DA8;
+}
+
+/* Iconos */
+.tag i {
+    font-size: 16px;
 }
