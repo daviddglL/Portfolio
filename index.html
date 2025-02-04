@@ -17,13 +17,14 @@
         <nav class="nav-links">
             <a href="#about">Sobre Mí</a>
             <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
+            <a href="#contact" id="contactLink">Contacto</a>
+            <p id="message">¡Estamos trabajando en ello!</p>
         </nav>
         <div class="hero-content">
             <div class="hero-text">
                 <h1>David Delgado</h1>
                 <p>Desarrollador Web</p>
-                <button>¡Contáctame!</button>
+                <button onclick="window.open('https://www.linkedin.com/in/david-delgado-garc%C3%ADa-de-lomas-2ab0a3275/', '_blank')" >¡Contáctame!</button>
             </div>
             <div class="hero-image">
                 <img src="https://via.placeholder.com/150" alt="David Delgado">
@@ -31,14 +32,15 @@
         </div>
         <div class="social-icons">
             <hr>
-            <a href="#"><img class="normal" src="./img/icons8-github-96.png" alt="GitHub"></a>
-            <a href="#"><img class="linkdn" src="./img/icons8-linkedin-100.png" alt="LinkedIn"></a>
-            <a href="#"><img class="small" src="./img/icons8-gmail-100.png" alt="Gmail"></a>
+            <a href="https://github.com/daviddglL"><img class="normal" src="./img/icons8-github-96.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/david-delgado-garc%C3%ADa-de-lomas-2ab0a3275/"><img class="linkdn" src="./img/icons8-linkedin-100.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/david-delgado-garc%C3%ADa-de-lomas-2ab0a3275/"><img class="small" src="./img/icons8-gmail-100.png" alt="Gmail"></a>
             <hr>
         </div>
     </header>
-    
+    <h1 class="titulo-carrusel">Aptitudes</h1>
     <div class="container-carrusel">
+        
         <div class="carruseles">
             <section class="slider-section">
                 <img src="./img/icons8-html-48.png" alt="HTML">
@@ -98,19 +100,24 @@
         </div>
     </div>
     <!-- ...existing code... -->
-    <div class="sobre-mi">
+    <div class="sobre-mi" id="about">
         <div class="contenido">
             <div class="card">
                 <h3 class="titulo">📘Estudios📒 </h3><br>
                 <ul>
                     <li>Grado en Desarrollo de Aplicaciones Multiplataforma </li>
                     <li>Grado en Desarrollo de Aplicaciones Web </li>
+                    <li>B2 Certificado Aptis ESOL</li>
                 </ul>
             </div>
             <div class="sobre-mi-contenido">
                 <h3 class="titulo">Sobre mi</h3>
                 <p>
-                    Mi nombre es David Delgado García de Lomas. Desde que comencé en el mundo de la programación, he experimentado una amplia gama de emociones, desde la frustración hasta la satisfacción de resolver problemas complejos...
+                    Mi nombre es David Delgado García de Lomas tengo 21 años, resido en Granada, España . Soy un apasionado de la programación y la tecnología, con experiencia en el desarrollo de aplicaciones web y móviles. <br>
+                    Desde que comencé en el mundo de la programación, he experimentado una amplia gama de emociones, desde la frustración hasta la satisfacción de resolver problemas complejos... 
+                    pero siempre con la motivación de aprender y mejorar cada día. <br>
+                    Me considero una persona proactiva, con capacidad para trabajar en equipo y adaptarme a nuevos entornos.
+
                 </p>
             </div>
         </div>
@@ -118,13 +125,13 @@
             <img src="./idea.png" alt="Johan Sebastián Valle" />
         </div>
     </div>
-    <div class="proyectos">
+    <div class="proyectos" id="projects">
         <h1>Mis Proyectos</h1>
         <div class="card-proyecto">
             <div class="proyecto-contenido">
                 <img class="img-proyecto" src="./img/proyecto1.PNG" alt="Proyecto 1">
                 <div class="proyecto-texto">
-                    <h1>Api Rest dedicada en Java</h1>
+                    <h2>Api Rest dedicada en Java</h2>
                     <div class="tags">
                         <span class="tag java">
                             <i class="fab fa-java"></i> Java
@@ -133,20 +140,26 @@
                             <i class="fab fa-mysql"></i> MySQL
                         </span>
                     </div>
-                    <p> Esta API Rest ha sido desarrollada completamente en **Java**, utilizando **Spring Boot** para facilitar la creación de servicios web y garantizar una arquitectura modular y escalable.
-                        Para la gestión de la base de datos, se ha implementado Hibernate como ORM (Object-Relational Mapping), lo que permite la manipulación eficiente de los datos almacenados en MySQL. Esta API está diseñada para manejar información de usuarios, incluyendo autenticación segura y gestión de credenciales mediante técnicas de cifrado.
+                    <p> Esta API Rest ha sido desarrollada completamente en **Java**.
+                        Para la gestión de la base de datos, se ha implementado Hibernate como ORM , lo que permite la manipulación eficiente de los datos almacenados en MySQL. Esta API está diseñada para manejar información de usuarios, incluyendo autenticación segura y gestión de credenciales mediante técnicas de cifrado.
                         Además, la API ofrece un CRUD completo (Create, Read, Update, Delete) para administrar usuarios y sus permisos. Se han implementado controladores RESTful siguiendo buenas prácticas de arquitectura, junto con una capa de servicios bien definida para separar la lógica de negocio del acceso a datos.
                     </p>
-
+                    <div class="contenedor-flecha">
+                        <button class="flecha" onclick="window.open('https://github.com/daviddglL/Api_Inventario.git', '_blank')" >
+                            <span class="linea"></span>
+                            <i class="fas fa-chevron-right">></i>
+                            <img src="./img/icons8-github-48.png" alt="">
+                        </button>
+                    </div>   
                 </div>
             </div>
             
         </div><br><br>
         <div class="card-proyecto">
             <div class="proyecto-contenido">
-                <img class="img-proyecto" src="./img/proyecto2.PNG" alt="Proyecto 1">
+                <img class="img-proyecto" src="./img/proyecto2.PNG" alt="Proyecto 2">
                 <div class="proyecto-texto">
-                    <h1>Proyecto Academia</h1>
+                    <h2>Proyecto Academia</h2>
                     <div class="tags">
                         <span class="tag python">
                             <i class="fab fa-python"></i> Python
@@ -157,27 +170,118 @@
                     </div>
                     <p> El proyecto "Academia" es un sistema de gestión de actividades y participantes desarrollado en Odoo utilizando Python como lenguaje principal. 
                         Se compone de tres modelos principales: Activities, además de una relación Many-to-One con Participants, mostrando el progreso de inscripciones con una barra de progreso; Participants, que almacena datos de los inscritos incluyendo nombre, email, fecha de nacimiento, fecha de inscripción, actividad relacionada y un responsable vinculado a res.users, 
-                        permitiendo también asociar una imagen; y Booking, que establece una relación Many-to-Many con Activities para organizar todas las actividades en un solo módulo. 
+                        permitiendo también asociar una imagen. 
                         Gracias a la flexibilidad de Odoo y la potencia de Python, este sistema permite una gestión eficiente y modular de las actividades dentro de la academia.
                     </p>
+                    <div class="contenedor-flecha">
+                        <button class="flecha" onclick="window.open('https://github.com/daviddglL/openacademy.git', '_blank')">
+                            <span class="linea"></span>
+                            <i class="fas fa-chevron-right">></i>
+                            <img src="./img/icons8-github-48.png" alt="">
+                        </button>
+                    </div>  
                 </div>
             </div>
             
         </div><br><br>
         <div class="card-proyecto">
             <div class="proyecto-contenido">
-                <img class="img-proyecto" src="./img/proyecto1.PNG" alt="Proyecto 1">
+                <img class="img-proyecto" src="./img/proyecto3.PNG" alt="Proyecto 3">
                 <div class="proyecto-texto">
-                    <h1>Api Rest dedicada en Java</h1>
-                    <p> Esta API Rest ha sido desarrollada completamente en **Java**, utilizando **Spring Boot** para facilitar la creación de servicios web y garantizar una arquitectura modular y escalable.
-                        Para la gestión de la base de datos, se ha implementado Hibernate como ORM (Object-Relational Mapping), lo que permite la manipulación eficiente de los datos almacenados en MySQL. Esta API está diseñada para manejar información de usuarios, incluyendo autenticación segura y gestión de credenciales mediante técnicas de cifrado.
-                        Además, la API ofrece un CRUD completo (Create, Read, Update, Delete) para administrar usuarios y sus permisos. Se han implementado controladores RESTful siguiendo buenas prácticas de arquitectura, junto con una capa de servicios bien definida para separar la lógica de negocio del acceso a datos.
+                    <h2>Club Deportivo</h2>
+                    <div class="tags">
+                        <span class="tag javascript">
+                            <i class="fab fa-javascript"></i> Javascript
+                        </span>
+                        <span class="tag mysql">
+                            <i class="fab fa-mysql"></i> Mysql
+                        </span>
+                        <span class="tag php">
+                            <i class="fab fa-php"></i> Php
+                        </span>
+                        <span class="tag html">
+                            <i class="fab fa-html"></i> Html
+                        </span>
+                        <span class="tag css">
+                            <i class="fab fa-css"></i> Css
+                        </span>
+                    </div>
+                    <p> El proyecto "Club Deportivo" es una aplicación web desarrollada con PHP, JavaScript y MySQL, integrando APIs externas y dedicadas, 
+                        además de gestionar sesiones de usuario. Su objetivo es administrar un gimnasio, permitiendo la gestión de socios, reservas, noticias, reseñas y otros servicios. Ofrece una experiencia dinámica y fácil de usar, 
+                        combinando bases de datos eficientes con interactividad mediante JavaScript y comunicación con servicios externos a través de APIs.
                     </p>
+                    <div class="contenedor-flecha">
+                        <button class="flecha" onclick="window.open('https://github.com/daviddglL/DavidDelgado.git', '_blank')">
+                            <span class="linea"></span>
+                            <i class="fas fa-chevron-right">></i>
+                            <img src="./img/icons8-github-48.png" alt="">
+                        </button>
+                        
+                        
+                    </div>  
                     
                 </div>
             </div>
             
         </div>
     </div>
+
+    <h1 class="titulo-carrusel">Otros Conocimientos</h1>
+    <div class="container-carrusel2">
+        
+        <div class="carruseles2">
+            <section class="slider-section">
+                <img src="./img/odoo.png" alt="Odoo">
+            </section>
+            <section class="slider-section">
+                <img src="./img/icons8-wordpress-48.png" alt="Wordpress">
+            </section>
+            <section class="slider-section">
+                <img src="./img/icons8-reaccionar-40.png" alt="React">
+            </section>
+            <section class="slider-section">
+                <img src="./img/icons8-linux-48.png" alt="Linux">
+            </section>
+            <!-- Duplicados para loop infinito -->
+            <section class="slider-section">
+                <img src="./img/odoo.png" alt="Odoo">
+            </section>
+            <section class="slider-section">
+                <img src="./img/icons8-wordpress-48.png" alt="Wordpress">
+            </section>
+            <section class="slider-section">
+                <img src="./img/icons8-reaccionar-40.png" alt="React">
+            </section>
+            <section class="slider-section">
+                <img src="./img/icons8-linux-48.png" alt="Linux">
+            </section>
+        </div>
+    </div>
+<!-- ...existing code... 
+    <form id="contactForm" action="send_email.php" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="response"></div>-->
+    
+
+    <footer style="background-color: #2D2D2D; color: #FFFFFF; padding: 20px; text-align: center;">
+        <p>&copy; 2025 David Delgado. Todos los derechos reservados.</p>
+        <p>Sígueme en: 
+          <a href="https://github.com/daviddglL" style="color: #00d1b2;">GitHub</a> | 
+          <a href="https://www.linkedin.com/in/david-delgado-garc%C3%ADa-de-lomas-2ab0a3275/" style="color: #00d1b2;">LinkedIn</a> | 
+          <a href="mailto:delgadogarciadelomasdavid@gmail.com" style="color: #00d1b2;">Gmail</a>
+        </p>
+      </footer>
+      
 </body>
 </html>
