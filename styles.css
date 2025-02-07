@@ -549,7 +549,7 @@ hr {
         font-size: 1rem;
     }
     .card-proyecto {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     .img-proyecto {
@@ -576,13 +576,28 @@ hr {
         align-items: center;
         text-align: center;
     }
-    .contenido, .sobre-mi-imagen {
+    .contenido,.sobre-mi-contenido, .sobre-mi-imagen {
         max-width: 100%;
         width: 100%;
+    }
+    .proyecto-texto{
+        max-width: 100%;
+        width: 100%;
+    }
+    .tags {
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-proyecto {
+        width: 100%;
+        height: auto;
     }
     .proyecto-contenido {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     .img-proyecto {
         margin-right: 0;
@@ -609,5 +624,9 @@ hr {
     .contact-form {
         width: 90%;
         padding: 15px;
+    }
+    .card-proyecto {
+        width: 100%;
+        height: auto;
     }
 }
